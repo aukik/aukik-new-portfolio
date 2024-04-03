@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description" content="CV & Resume Template" />
+	<meta name="keywords" content="vcard, resposnive, resume, personal, card, cv, cvio, portfolio" />
+	<meta name="author" content="Aukik Aurnab" />
+
+	<!-- Title -->
+	<title>Cvio - Resume/CV Template</title>
+
+	<!-- Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic"
+		rel="stylesheet">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/basic.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/jarallax.css" />
+	<link rel="stylesheet" href="css/swiper.css" />
+	<link rel="stylesheet" href="css/fontawesome.css" />
+	<link rel="stylesheet" href="css/brands.css" />
+	<link rel="stylesheet" href="css/solid.css" />
+
+	<!-- Theme Colors
+	<link rel="stylesheet" href="css/theme-colors/blue.css" />
+	<link rel="stylesheet" href="css/theme-colors/green.css" />
+	<link rel="stylesheet" href="css/theme-colors/orange.css" />
+	<link rel="stylesheet" href="css/theme-colors/brown.css" />
+	<link rel="stylesheet" href="css/theme-colors/purple.css" />
+	<link rel="stylesheet" href="css/theme-colors/red.css" />
+	<link rel="stylesheet" href="css/theme-colors/beige.css" />
+	<link rel="stylesheet" href="css/theme-colors/green_light.css" />
+	<link rel="stylesheet" href="css/theme-colors/yellow.css" />
+	<link rel="stylesheet" href="css/theme-colors/yellow_light.css" />
+	-->
+	<style>
+		#heatmap-container {
+			width: 800px;
+			height: 200px;
+		}
+	</style>
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link rel="shortcut icon" href="images/favicons/favicon.ico">
+
+	<script>
+		const slideTrack = document.querySelector('.slide-track-gpt');
+		const slides = Array.from(slideTrack.children);
+
+		const setSlidePosition = (slide, index) => {
+			slide.style.left = `${index * 100}%`;
+		};
+
+		slides.forEach(setSlidePosition);
+
+		slideTrack.addEventListener('animationiteration', () => {
+			const currentSlide = slideTrack.children[0];
+			slideTrack.removeChild(currentSlide);
+			slideTrack.appendChild(currentSlide);
+			slides.forEach(setSlidePosition);
+		});
+	</script>
+</head>
+
+<body>
+
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="centrize full-width">
+			<div class="vertical-center">
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Container -->
+	<div class="container">
+
+		<!-- Cursor -->
+		<div class="cursor-follower"></div>
+
+		<!-- Header -->
+		<header class="header">
+			<div class="head-top">
+
+				<!-- menu button -->
+				<a href="#" class="menu-btn"><span></span></a>
+
+				<!-- logo -->
+				<div class="logo hover-masks-logo">
+					<a href="#">
+						<span class="mask-lnk">Aukik <strong>Aurnab</strong></span>
+						<span class="mask-lnk mask-lnk-hover">Download <strong>CV</strong></span>
+					</a>
+				</div>
+
+				<!-- top menu -->
+				<div class="top-menu hover-masks">
+					<div class="top-menu-nav">
+						<div class="menu-topmenu-container">
+							<ul class="menu">
+								<li class="menu-item">
+									<a href="index_slider.html">Home</a>
+									<!-- <ul class="sub-menu">
+										<li class="menu-item"><a href="index.html">Home Default</a></li>
+										<li class="menu-item"><a href="index_creative.html">Home Creative</a></li>
+										<li class="menu-item"><a href="index_slider.html">Home Slider</a></li>
+										<li class="menu-item"><a href="index_personal.html">Home Personal</a></li>
+										<li class="menu-item"><a href="index_onepage.html" target="blank">Home OnePage</a></li>
+										<li class="menu-item"><a href="index_image.html">Home Image</a></li>
+										<li class="menu-item"><a href="index_video.html">Home Video</a></li>
+									</ul> -->
+								</li>
+								<li class="menu-item current-menu-item">
+									<a href="resume_image.html">Resume</a>
+									<!-- <ul class="sub-menu">
+										<li class="menu-item"><a href="resume.html">Resume Default</a></li>
+										<li class="menu-item current-menu-item"><a href="resume_image.html">Resume Image</a></li>
+										<li class="menu-item"><a href="resume_creative.html">Resume Creative</a></li>
+									</ul> -->
+								</li>
+								<li class="menu-item">
+									<a href="works_creative.html">Works</a>
+									<!-- <ul class="sub-menu">
+										<li class="menu-item"><a href="works.html">Works Default</a></li>
+										<li class="menu-item"><a href="works_creative.html">Works Creative</a></li>
+										<li class="menu-item"><a href="work_single.html">Work Single</a></li>
+										<li class="menu-item"><a href="work_single_image.html">Work Single Image</a></li>
+										<li class="menu-item"><a href="work_single_creative.html">Work Single Creative</a></li>
+									</ul> -->
+								</li>
+								<li class="menu-item">
+									<a href="contacts_map.html">Contact</a>
+									<!-- <ul class="sub-menu">
+										<li class="menu-item"><a href="contacts.html">Contact Default</a></li>
+										<li class="menu-item"><a href="contacts_map.html">Contact Map</a></li>
+										<li class="menu-item"><a href="contacts_image.html">Contact Image</a></li>
+										<li class="menu-item"><a href="contacts_creative.html">Contact Creative</a></li>
+									</ul> -->
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</header>
+
+		<!-- Wrapper -->
+		<div class="wrapper">
+
+			<!-- Section Started -->
+			<div class="section started section-title" id="section-started">
+
+				<!-- background -->
+				<div class="video-bg jarallax" style="background-image: url(images/keyboard-image-2.jpg);">
+					<div class="video-bg-mask"></div>
+					<div class="video-bg-texture" id="grained_container"></div>
+				</div>
+
+				<!-- started content -->
+				<div class="centrize full-width">
+					<div class="vertical-center">
+						<div class="started-content">
+							<h1 class="h-title">Resume</h1>
+							<div class="h-subtitles">
+								<div class="h-subtitle typing-bread">
+									<p class="breadcrumbs">
+										<a href="index_slider.html">Home</a> / Resume
+									</p>
+								</div>
+								<span class="typed-bread"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- mosue button -->
+				<a href="#" class="mouse_btn" style="display: none;"><span class="icon fas fa-chevron-down"></span></a>
+
+			</div>
+
+			<!-- Section About -->
+			<div class="section about" id="section-about">
+				<div class="content content-box">
+
+					<!-- image -->
+					<div class="image">
+						<img src="images/man2.png" alt="" />
+					</div>
+
+					<!-- desc -->
+					<div class="desc">
+						<p>Hello! I’m Aukik Aurnab. I am a lifelong learner who finds joy in acquiring knowledge. My interests often
+							align with my career, making the learning process feel less like work and more like a personal adventure.
+							I am not just confined to my field of work, I love to gather diversified knowledge on various fields. I
+							value freedom and prefer to do things in my own way. This doesn’t mean I disregard advice. In fact, I take
+							advice from people based on their credibility over the topic. This approach helps me make informed
+							decisions and be efficient in my work. One of my defining traits is that I love playing the long-term
+							game. I believe in making decisions that will benefit me in the long run, rather than seeking instant
+							gratification. In essence, I am someone who loves learning, values freedom and efficiency, and is always
+							planning for the future.</p>
+						<div class="info-list">
+							<ul>
+								<li><strong>Current Position: </strong>CTO</li>
+								<li><strong>Company:</strong> Bismo</li>
+								<li><strong>Phone:</strong> +880 168 007 7890</li>
+								<li><strong>E-mail:</strong> aurnab@bismoapps.com</li>
+							</ul>
+						</div>
+						<div class="bts">
+							<a href="#" class="btn hover-animated">
+								<span class="circle"></span>
+								<span class="lnk">Download CV</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="clear"></div>
+				</div>
+			</div>
+
+			<!-- Section Service -->
+			<div class="section service" id="section-services">
+				<div class="content">
+
+					<!-- title -->
+					<div class="title">
+						<div class="title_inner">SKILLS & EXPERTISE</div>
+					</div>
+
+					<!-- service items -->
+					<div class="service-items">
+
+						<div class="service-col">
+							<div class="service-item content-box">
+								<div class="icon"><span class="fas fa-code"></span></div>
+								<div class="name">Web Development</div>
+								<div class="text">Adept in API development with Express.js and FastAPI, as well as with HTTP3 protocols
+									and implementing OpenAI APIs. Skilled in frontend development with React and SvelteKit, and in styling
+									using Tailwind CSS.</div>
+							</div>
+						</div>
+
+						<div class="service-col">
+							<div class="service-item content-box">
+								<div class="icon"><span class="fas fa-cogs"></span></div>
+								<div class="name">System Engineer</div>
+								<div class="text">Expert in system architecture, database engineering, test automation, and bottleneck
+									identification. Proficient with tools like Wireshark and Fiddler.</div>
+							</div>
+						</div>
+
+						<div class="service-col">
+							<div class="service-item content-box">
+								<div class="icon"><span class="fas fa-cloud"></span></div>
+								<div class="name">Cloud Architect</div>
+								<div class="text">Skilled in cloud hosting, reverse proxy, CDN implementation, version control, and
+									Docker containerization. Experienced with AWS, Azure, Cloudflare, Nginx, and GitHub.</div>
+							</div>
+						</div>
+
+						<div class="service-col">
+							<div class="service-item content-box">
+								<div class="icon"><span class="fa fa-database"></span></div>
+								<div class="name">Database Management</div>
+								<div class="text">Proficient in managing PostgreSQL and MongoDB databases, adept at leveraging Prisma
+									ORM and optimizing SQL queries for relational database operations.</div>
+							</div>
+						</div>
+
+						<div class="service-col">
+							<div class="service-item content-box">
+								<div class="icon"><span class="fas fa-spider"></span></div>
+								<div class="name">Web Scrapping</div>
+								<div class="text">Proficient in web scraping techniques utilizing Selenium, Puppeteer, and Playwright by
+									using proxy servers. Navigating online environments to extract valuable data efficiently and
+									accurately.</div>
+							</div>
+						</div>
+
+						<div class="service-col">
+							<div class="service-item content-box">
+								<div class="icon"><span class="fas fa-rocket"></span></div>
+								<div class="name">ML and LLM Integration</div>
+								<div class="text">Proficient in crafting data analysis pipelines, developing/integrating Machine
+									Learning and Language Models (LLM) capability into diverse projects seemlessly using tools like
+									Langchain and Streamlit.</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="clear"></div>
+				</div>
+			</div>
+			<!-- Section Clients -->
+			<div class="section clients" id="section-clients">
+				<div class="content">
+
+					<!-- title
+								<div class="title">
+									<div class="title_inner">TOOLS</div>
+								</div> -->
+
+					<!-- clients items -->
+					<div class="content-box" style="margin-left: 0px;margin-right: 0px;">
+						<div class="clients-items">
+							<div class="slider-gpt">
+								<div class="slide-track-gpt">
+									<div class="slide-gpt">
+										<img width="326" height="326" src="https://img.icons8.com/fluency/326/azure-1.png" alt="azure-1" />
+										<img width="326" height="326"
+											src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/326/external-cloudflare-provides-content-delivery-network-services-ddos-mitigation-logo-color-tal-revivo.png"
+											alt="external-cloudflare-provides-content-delivery-network-services-ddos-mitigation-logo-color-tal-revivo" />
+										<img width="326" height="326" src="https://img.icons8.com/nolan/326/amazon-web-services.png"
+											alt="amazon-web-services" />
+										<img width="326" height="326" src="https://img.icons8.com/ios-filled/326/FFFFFF/amazon-s3.png"
+											alt="amazon-s3" />
+										<img width="326" height="326" src="https://img.icons8.com/material-rounded/326/FFFFFF/github.png"
+											alt="github" />
+										<img width="326" height="326" src="https://img.icons8.com/nolan/326/wireshark--v1.png"
+											alt="wireshark--v1" />
+										<img width="326" height="326" src="https://img.icons8.com/doodle/326/svetle.png" alt="svetle" />
+									</div>
+									<div class="slide-gpt">
+										<img width="326" height="326" src="https://img.icons8.com/color/326/python--v1.png"
+											alt="python--v1" />
+										<img width="326" height="326" src="https://img.icons8.com/color/326/postgreesql.png"
+											alt="postgreesql" />
+										<img width="326" height="326" src="https://img.icons8.com/ios/326/FFFFFF/chatgpt.png"
+											alt="chatgpt" />
+										<img width="326" height="326" src="https://img.icons8.com/office/326/express-js.png"
+											alt="express-js" />
+										<img width="326" height="326" src="https://img.icons8.com/fluency/326/node-js.png" alt="node-js" />
+										<img width="326" height="326" src="https://img.icons8.com/color/326/prisma-orm.png"
+											alt="prisma-orm" />
+										<img width="326" height="326" src="https://img.icons8.com/fluency/326/tailwind_css.png"
+											alt="tailwind_css" />
+									</div>
+
+									<div class="slide-gpt">
+										<img width="326" height="326" src="https://img.icons8.com/ios/326/FFFFFF/aws-cloudfront.png"
+											alt="aws-cloudfront" />
+										<img width="326" height="326" src="https://img.icons8.com/color/326/docker.png" alt="docker" />
+										<img width="326" height="326" src="https://img.icons8.com/office/326/react.png" alt="react" />
+										<img width="326" height="326"
+											src="https://img.icons8.com/ios/326/FFFFFF/selenium-test-automation.png"
+											alt="selenium-test-automation" />
+										<img width="326" height="326"
+											src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/326/FFFFFF/external-jest-can-collect-code-coverage-information-from-entire-projects-logo-bold-tal-revivo.png"
+											alt="external-jest-can-collect-code-coverage-information-from-entire-projects-logo-bold-tal-revivo" />
+										<img width="326" height="326"
+											src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/326/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png"
+											alt="external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo" />
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+			<!-- Section Knowladge Skills -->
+			<div class="section skills" id="section-skills-know">
+				<div class="content">
+
+					<!-- title -->
+					<div class="title">
+						<div class="title_inner">STACK & TOOLS</div>
+					</div>
+
+					<!-- skills -->
+					<div class="skills list content-box">
+						<ul>
+							<li>
+								<div class="name">Docker</div>
+							</li>
+							<li>
+								<div class="name">AWS EC2</div>
+							</li>
+							<li>
+								<div class="name">Azure VM</div>
+							</li>
+							<li>
+								<div class="name">S3 Bucket</div>
+							</li>
+							<li>
+								<div class="name">Azure Blob Storage</div>
+							</li>
+							<li>
+								<div class="name">GitHub</div>
+							</li>
+							<li>
+								<div class="name">Selenium</div>
+							</li>
+							<li>
+								<div class="name">Playwright</div>
+							</li>
+							<li>
+								<div class="name">Jest</div>
+							</li>
+							<li>
+								<div class="name">Supertest</div>
+							</li>
+							<li>
+								<div class="name">Cloudflare</div>
+							</li>
+							<li>
+								<div class="name">Cloudfront</div>
+							</li>
+							<li>
+								<div class="name">Nginx</div>
+							</li>
+							<li>
+								<div class="name">Wireshark</div>
+							</li>
+							<li>
+								<div class="name">Fiddler</div>
+							</li>
+							<li>
+								<div class="name">Express.js</div>
+							</li>
+							<li>
+								<div class="name">Node.js</div>
+							</li>
+							<li>
+								<div class="name">Prisma ORM</div>
+							</li>
+							<li>
+								<div class="name">React</div>
+							</li>
+							<li>
+								<div class="name">SvelteKit</div>
+							</li>
+							<li>
+								<div class="name">Tailwind CSS</div>
+							</li>
+							<li>
+								<div class="name">FastApi</div>
+							</li>
+							<li>
+								<div class="name">Python Flask</div>
+							</li>
+							<li>
+								<div class="name">PostgreSQL</div>
+							</li>
+							<li>
+								<div class="name">MongoDB</div>
+							</li>
+							<li>
+								<div class="name">Langchain</div>
+							</li>
+							<li>
+								<div class="name">OpenAI</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Section Resume -->
+			<div class="section resume" id="section-history">
+				<div class="content">
+					<div class="cols">
+
+						<div class="col col-md">
+
+							<!-- title -->
+							<div class="title">
+								<div class="title_inner">EXPERIENCE</div>
+							</div>
+
+							<!-- resume items -->
+							<div class="resume-items">
+
+								<div class="resume-item content-box active">
+									<div class="date">May 2023 - Present</div>
+									<div class="name">Chief Technology Officer-Bismo</div>
+									<dive class="text">As a Team Lead, I specialize in system architecture, backend development with
+										Express, PrismaORM, and PostgreSQL, database engineering (especially PostgreSQL), test automation
+										using Jest, SuperTest, and Playwright, implementing Reverse Proxy (Nginx) and CDNs (Cloudflare &
+										Cloudfront), frontend development (React/Svelte), integrating OpenAI APIs via tools like Langchain,
+										bottleneck discovery and latency minimization with Wireshark and Fiddler, and deployment using
+										Docker containers and CI/CD pipelines.</dive>
+								</div>
+
+								<div class="resume-item content-box">
+									<div class="date">Nov 2022 - May 2023</div>
+									<div class="name">System Engineer - allDoc</div>
+									<div class="text">I analyzed business and technical requirements, developed robust backends with
+										Express, Prisma, and PostgreSQL. I worked with HTTP3 protocols (QUIC, TLS 1.3, HTTP2), version
+										controlling with GitHub, and cloud hosting on Azure VM and AWS EC2. My deployment expertise lies in
+										Docker containers and CI/CD pipelines.</div>
+								</div>
+
+								<div class="resume-item content-box" style="border-bottom: 2px solid white;">
+									<div class="date">May 2021 - April 2022</div>
+									<div class="name">Student Tutor - Brac University</div>
+									<div class="text">Peer tutoring students on courses like; programming languages (Python) and
+										Object-Oriented Programming (OOP). Responsibilities included consulting the students on topics they
+										had issue in, grading assignments, and aiding faculties during lab sessions.</div>
+								</div>
+								<br>
+								<br>
+								<div class="title">
+									<div class="title_inner">EDUCATION</div>
+								</div>
+								<div class="resume-item content-box" style="margin: 0 0 0 0;">
+									<div class="date">2019</div>
+									<div class="name">Brac University - Dhaka</div>
+									<div class="text">BSc. in Computer Science and Engineering</div>
+									<div class="text">CGPA: 3.93 out of 4.00</div>
+								</div>
+
+								<div class="resume-item content-box">
+									<div class="date">2018</div>
+									<div class="name">Notre Dame College</div>
+									<div class="text">Higher Secondary certificate in Science</div>
+									<div class="text">GPA: 5.00 out of 5.00</div>
+								</div>
+
+								<div class="resume-item content-box" style="border-bottom: 2px solid white;">
+									<div class="date">2016</div>
+									<div class="name">South Point School and College</div>
+									<div class="text">Secondary School Certificate in Science </div>
+									<div class="text">GPA: 5.00 out of 5.00</div>
+								</div>
+								<br>
+								<br>
+								<div class="title">
+									<div class="title_inner">PUBLICATION</div>
+								</div>
+								<div class="resume-item content-box" style="margin: 0 0 0 0;">
+									<div class="name">Comparative analysis of machine learning techniques in optimal site selection</div>
+									<div class="date">December 2023</div>
+									<div class="text">DOI: 10.1109/ICCIT60459.2023.10441367</div>
+									<div class="text"><a href="https://ieeexplore.ieee.org/document/10441367">Show IEEE Paper</a></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col col-md certify-border">
+							<!-- title -->
+							<div class="title">
+								<div class="title_inner">CERTIFICATIONS</div>
+							</div>
+
+							<!-- resume items -->
+							<div class="resume-items">
+								<div class="resume-item content-box">
+									<div class="name">Microsoft Certified: Azure Data Fundamentals</div>
+									<div class="date">April 2023</div>
+									<div class="name">Issued by: Microsoft</div>
+									<div class="text">Foundational concepts of Azure data services, encompassing databases, analytics, and
+										data storage technologies</div>
+									<div class="text"><a
+											href="https://www.credly.com/badges/4ffce931-726c-42fb-8389-1edbd10f0c6f/public_url">Show
+											Certification</a></div>
+								</div>
+								<div class="resume-item content-box">
+									<div class="name">Machine Learning Specialization</div>
+									<div class="date">May 2023</div>
+									<div class="name">Issued by: Coursera</div>
+									<div class="text">Credential ID: PVF5P5TEDFYW</div>
+									<div class="text">Proficient use of various machine learning techniques, algorithms, and applications
+										through comprehensive coursework and practical exercises.</div>
+									<div class="text"><a href="https://coursera.org/share/614ec6c072e2ea68159adcb2b0310cda">Show
+											Certification</a></div>
+								</div>
+								<div class="resume-item content-box">
+									<div class="name">Unsupervised Learning, Recommenders, Reinforcement Learning</div>
+									<div class="date">May 2023</div>
+									<div class="name">Issued by: Coursera</div>
+									<div class="text">Credential ID: 5SWQ2TPXLYYS</div>
+									<div class="text">Expert use of unsupervised learning techniques, recommender systems, and
+										reinforcement learning algorithms, enabling proficient application across diverse domains.</div>
+									<div class="text"><a href="https://coursera.org/share/471194f1e927a16c2c933085b657d4a2">Show
+											Certification</a></div>
+								</div>
+								<div class="resume-item content-box">
+									<div class="name">Advanced Learning Algorithms</div>
+									<div class="date">April 2023</div>
+									<div class="name">Issued by: Coursera</div>
+									<div class="text">Credential ID: HY5EKRU3G7KY</div>
+									<div class="text">Demonstration of advanced algorithms and techniques in machine learning, enhancing
+										proficiency in designing and implementing complex learning models for various applications.</div>
+
+									<div class="text"><a href="https://coursera.org/share/73e1db5e0db507590f9d896b5d07c07a">Show
+											Certification</a></div>
+								</div>
+								<div class="resume-item content-box">
+									<div class="name">Supervised Machine Learning: Regression and Classification</div>
+									<div class="date">March 2023</div>
+									<div class="name">Issued by: Coursera</div>
+									<div class="text">Credential ID: WT5MDAYVTXT7</div>
+									<div class="text">Use of supervised machine learning techniques for regression and classification
+										tasks, encompassing algorithms, model evaluation, and application in real-world scenarios.</div>
+
+									<div class="text"><a href="https://www.coursera.org/account/accomplishments/verify/WT5MDAYVTXT7">Show
+											Certification</a></div>
+								</div>
+								<div class="resume-item content-box">
+									<div class="name">Udemy Katonic MlOps</div>
+									<div class="date">March 2023</div>
+									<div class="name">Issued by: Udemy</div>
+									<div class="text">Credential ID: UC-0ec6aa52-91ac-45fa-ab4b-9c6e34df3d5d</div>
+									<div class="text">Mastering MLOps methodologies and practices offered by Katonic, gaining proficiency
+										in deploying, monitoring, and managing machine learning models efficiently in production
+										environments.</div>
+
+									<div class="text"><a
+											href="https://www.udemy.com/certificate/UC-0ec6aa52-91ac-45fa-ab4b-9c6e34df3d5d/">Show
+											Certification</a></div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Section Interests -->
+			<div class="section service" id="section-interests">
+				<div class="content">
+
+					<!-- title -->
+					<div class="title">
+						<div class="title_inner">GIT CONTRIBUTIONS</div>
+						<!-- Prepare a container for your calendar. -->
+
+
+					</div>
+					<img style="width: 100%; padding-left: 5%; padding-right: 5%;" src="http://ghchart.rshah.org/aukik"
+						alt="2016rshah's Github chart" />
+
+
+					<!-- interests items -->
+					<!-- <div class="service-items">
+
+						<div class="service-col">
+							<div class="service-item content-box">
+								<div class="icon"><span class="fas fa-baseball-ball"></span></div>
+								<div class="name">Basketball</div>
+								<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+							</div>
+						</div>
+
+						<div class="service-col">
+							<div class="service-item content-box">
+								<div class="icon"><span class="fas fa-campground"></span></div>
+								<div class="name">Camping</div>
+								<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+							</div>
+						</div>
+
+						<div class="service-col">
+							<div class="service-item content-box">
+								<div class="icon"><span class="fas fa-chess-knight"></span></div>
+								<div class="name">Chess</div>
+								<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+							</div>
+						</div>
+
+						<div class="service-col">
+							<div class="service-item content-box">
+								<div class="icon"><span class="fas fa-headphones"></span></div>
+								<div class="name">Music</div>
+								<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+							</div>
+						</div>
+
+					</div> -->
+
+					<div class="clear"></div>
+				</div>
+			</div>
+
+
+
+
+		</div>
+		<div class="section custom-text" id="section-custom-text">
+			<div class="content">
+
+				<!-- title -->
+				<div class="title">
+					<div class="title_inner">PROPEL YOUR VISION FORWARD WITH ME!</div>
+				</div>
+
+				<!-- clients items -->
+				<div class="content-box">
+					<div class="single-post-text">
+						<p>
+							Thank you for visiting my resume website. I hope you've gained insight into my skills, experiences, and
+							passion for this industry.
+						</p>
+						<p>
+							Whether you're interested in collaboration or simply connecting, I'd love to hear from you. Feel free to
+							reach out via email or connect with me on linkedin. Let's explore how we can work together to achieve our
+							goals!
+						</p>
+					</div>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="copy">
+			<p>E: aurnab@bismoapps.com</p>
+			<p>P: +880 168 007 7890</p>
+		</div>
+		<div class="soc-box">
+			<div class="follow-label">Find Me On</div>
+			<div class="soc">
+				<a target="_blank" href="https://www.linkedin.com/in/aukik-aurnab//">
+					<span class="icon fab fa-linkedin"></span>
+				</a>
+				<a target="_blank" href="https://github.com/aukik/">
+					<span class="icon fab fa-github"></span>
+				</a>
+				<a target="_blank" href="https://www.researchgate.net/profile/Aukik-Aurnab/">
+					<span class="icon fab fa-researchgate"></span>
+				</a>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</footer>
+
+	<!-- Lines -->
+	<div class="lines">
+		<div class="line-col"></div>
+		<div class="line-col"></div>
+		<div class="line-col"></div>
+		<div class="line-col"></div>
+		<div class="line-col"></div>
+	</div>
+
+	</div>
+
+
+	<!-- Scripts -->
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/magnific-popup.js"></script>
+	<script src="js/simpleParallax.js"></script>
+	<script src="js/typed.js"></script>
+	<script src="js/jarallax.js"></script>
+	<script src="js/jarallax-video.js"></script>
+	<script src="js/jarallax-element.js"></script>
+	<script src="js/imagesloaded.pkgd.js"></script>
+	<script src="js/isotope.pkgd.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/grained.js"></script>
+	<script src="js/scripts.js"></script>
+
+</body>
+
+</html>

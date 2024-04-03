@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple CSS Slider</title>
+<style>
+    .slider-gpt {
+  overflow: hidden;
+  width: 600px; /* Adjust the width to fit 6 logos */
+}
+
+.slide-track-gpt {
+  display: flex;
+  animation: scroll 10s linear infinite; /* Adjust the animation duration as needed */
+}
+
+.slide-gpt {
+  display: flex;
+}
+
+.slide-gpt img {
+  width: 100px; /* Adjust the logo width as needed */
+  height: 100px; /* Adjust the logo height as needed */
+  margin-right: 20px; /* Add some space between logos */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Adjust the translation value to fit the logos */
+  }
+}
+</style>
+</head>
+<body>
+
+    <div class="slider-gpt">
+        <div class="slide-track-gpt">
+          <div class="slide-gpt">
+            <img width="326" height="326" src="https://img.icons8.com/fluency/326/azure-1.png" alt="azure-1"/>
+			<img width="326" height="326" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/326/external-cloudflare-provides-content-delivery-network-services-ddos-mitigation-logo-color-tal-revivo.png" alt="external-cloudflare-provides-content-delivery-network-services-ddos-mitigation-logo-color-tal-revivo"/>
+			<img width="326" height="326" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/326/external-nginx-accelerates-content-and-application-delivery-improves-security-logo-shadow-tal-revivo.png" alt="external-nginx-accelerates-content-and-application-delivery-improves-security-logo-shadow-tal-revivo"/>
+			<img width="326" height="326" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/326/external-nginx-accelerates-content-and-application-delivery-improves-security-logo-shadow-tal-revivo.png" alt="external-nginx-accelerates-content-and-application-delivery-improves-security-logo-shadow-tal-revivo"/>
+			<img width="326" height="326" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/326/external-nginx-accelerates-content-and-application-delivery-improves-security-logo-shadow-tal-revivo.png" alt="external-nginx-accelerates-content-and-application-delivery-improves-security-logo-shadow-tal-revivo"/>
+										
+            <!-- Add more logos as needed -->
+          </div>
+          <div class="slide-gpt">
+            <img src="logo7.png" alt="Logo 7">
+            <img src="logo8.png" alt="Logo 8">
+            <!-- Add more logos as needed -->
+          </div>
+        </div>
+      </div>
+
+<script>
+    const slideTrack = document.querySelector('.slide-track');
+    const slides = Array.from(slideTrack.children);
+
+    const setSlidePosition = (slide, index) => {
+    slide.style.left = `${index * 100}%`;
+    };
+
+    slides.forEach(setSlidePosition);
+
+    slideTrack.addEventListener('animationiteration', () => {
+    const currentSlide = slideTrack.children[0];
+    slideTrack.removeChild(currentSlide);
+    slideTrack.appendChild(currentSlide);
+    slides.forEach(setSlidePosition);
+    });
+</script>
+
+</body>
+</html>
